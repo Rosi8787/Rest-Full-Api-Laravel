@@ -60,7 +60,7 @@ class ProductController extends Controller
         if (!$product) {
             return response()->json([
                 'message' => 'Product tidak di temukan'
-            ], 404);
+            ], 404);  
         }
 
         $validated = $request->validate([
